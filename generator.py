@@ -6,14 +6,13 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env", override=True)
 
-def _get_api_key() -> str:
+def _get_client() -> anthropic.Anthropic:
     try:
         import streamlit as st
-        return st.secrets["ANTHROPIC_API_KEY"]
+        api_key = st.secrets["ANTHROPIC_API_KEY"]
     except Exception:
-        return os.getenv("ANTHROPIC_API_KEY", "")
-
-client = anthropic.Anthropic(api_key=_get_api_key())
+        api_key = os.getenv("ANTHROPIC_API_KEY", "")
+    return anthropic.Anthropic(api_key=api_key)
 
 SYSTEM_PROMPT = """Du bist ein Instagram-Contentplaner für berufstätige Mamas, die online starten wollen und wenig Zeit haben.
 
@@ -101,7 +100,7 @@ struktur: 2-3 Sätze wie der Post aufgebaut sein soll
 cta: 1 konkreter Call to Action passend zum Ziel "{ziel}"
 """
 
-    message = client.messages.create(
+    message = _get_client().messages.create(
         model="claude-sonnet-4-6",
         max_tokens=2000,
         system=SYSTEM_PROMPT,
