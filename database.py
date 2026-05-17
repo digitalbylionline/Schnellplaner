@@ -5,8 +5,15 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env", override=True)
 
-DB_PATH = os.getenv("DB_PATH", "schnellplaner.db")
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin2026")
+def _secret(key: str, default: str = "") -> str:
+    try:
+        import streamlit as st
+        return st.secrets[key]
+    except Exception:
+        return os.getenv(key, default)
+
+DB_PATH = _secret("DB_PATH", "schnellplaner.db")
+ADMIN_PASSWORD = _secret("ADMIN_PASSWORD", "admin2026")
 
 
 def get_connection():

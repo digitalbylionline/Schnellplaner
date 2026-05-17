@@ -6,7 +6,14 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env", override=True)
 
-client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+def _get_api_key() -> str:
+    try:
+        import streamlit as st
+        return st.secrets["ANTHROPIC_API_KEY"]
+    except Exception:
+        return os.getenv("ANTHROPIC_API_KEY", "")
+
+client = anthropic.Anthropic(api_key=_get_api_key())
 
 SYSTEM_PROMPT = """Du bist ein Instagram-Contentplaner für berufstätige Mamas, die online starten wollen und wenig Zeit haben.
 
