@@ -12,6 +12,7 @@ tags: [uebersicht]
 
 - Vorlage: [[Vorlage_Video]]
 - Formatanalyse Referenzaccounts: [[Formatanalyse_Referenzaccounts]]
+- Beispielvideo ohne Avatar (Prototyp, R0): `Beispielvideo/VID-0001_Ballaststoffe_Entwurf.mp4` – Quelle der Animation: `Beispielvideo/VID-0001_Ballaststoffe_animiert.html` (im Browser abspielbar, Szenen per `render(t)`)
 - Voraussetzung je Video: Quell-Akte mindestens **R1**, alle verwendeten Aussagen mit ID, Rechtscheck nach [[Regelwerk_Recht_DE_EU]] Abschnitt 10.
 - Regeln: [[Redaktionelle_Regeln_und_Sicherheit]]
 

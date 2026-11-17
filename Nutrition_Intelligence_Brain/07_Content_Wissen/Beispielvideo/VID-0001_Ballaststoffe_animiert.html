@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>VID-0001 Ballaststoffe – Beispielvideo</title>
+<style>
+  :root{--bg1:#0d1b2e;--bg2:#13294a;--green:#7ed957;--yellow:#ffd43b;--coral:#ff8a65;--teal:#4dd0c8;--pink:#f4a6a6;--white:#f7f9fc;--muted:#9fb1c9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:540px;height:960px;overflow:hidden;background:var(--bg1)}
+  body{font-family:"Inter","Inter Display",sans-serif;color:var(--white)}
+  #stage{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 0%,var(--bg2),var(--bg1) 70%);overflow:hidden}
+  .blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:.35}
+  .scene{position:absolute;inset:0;opacity:0}
+  .tag{position:absolute;top:22px;left:22px;font-size:12px;font-weight:700;letter-spacing:.12em;padding:6px 10px;border-radius:999px;background:rgba(126,217,87,.15);color:var(--green)}
+  .draft{position:absolute;top:22px;right:22px;font-size:10px;font-weight:700;letter-spacing:.06em;padding:5px 8px;border-radius:6px;background:rgba(255,138,101,.18);color:var(--coral);text-align:right;line-height:1.35}
+  #progress{position:absolute;top:0;left:0;height:4px;background:var(--green)}
+  .h1{position:absolute;left:30px;right:30px;font-weight:800;font-size:44px;line-height:1.08;text-align:center}
+  .label{position:absolute;font-size:15px;font-weight:700;padding:6px 10px;border-radius:10px;background:rgba(13,27,46,.85);border:1px solid rgba(255,255,255,.15);white-space:nowrap}
+  .src{position:absolute;left:30px;right:30px;font-size:11px;color:var(--muted);text-align:center}
+  #captions{position:absolute;left:24px;right:24px;bottom:70px;min-height:120px;text-align:center;font-weight:800;font-size:27px;line-height:1.25;text-shadow:0 2px 0 #000,0 0 12px rgba(0,0,0,.6)}
+  #captions .w{display:inline-block;margin:0 4px;transform-origin:50% 80%}
+  #captions .cur{color:var(--yellow)}
+  table{border-collapse:separate;border-spacing:0 8px;width:100%}
+  td,th{padding:12px 12px;font-size:16px;text-align:left}
+  th{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+  tr.row td{background:rgba(255,255,255,.07)}
+  tr.row td:first-child{border-radius:12px 0 0 12px;font-weight:800}
+  tr.row td:last-child{border-radius:0 12px 12px 0;color:var(--muted);font-size:14px}
+  .big{font-weight:800;color:var(--green);font-size:20px}
+  .ring-label{position:absolute;width:200px;text-align:center;font-weight:700;font-size:15px}
+  .ring-num{position:absolute;width:200px;text-align:center;font-weight:800;font-size:40px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="blob" style="width:340px;height:340px;left:-120px;top:120px;background:#2b6cb0"></div>
+  <div class="blob" style="width:300px;height:300px;right:-110px;top:520px;background:#2f855a"></div>
+  <div id="progress"></div>
+
+  <!-- S1 Hook -->
+  <div class="scene" id="s1">
+    <svg id="s1svg" width="540" height="960" style="position:absolute;inset:0"></svg>
+    <div class="h1" id="s1title" style="top:300px">Das hier essen deine <span style="color:var(--green)">Darmbakterien</span> –<br>nicht du.</div>
+  </div>
+
+  <!-- S2 Gut map -->
+  <div class="scene" id="s2">
+    <svg width="540" height="960" style="position:absolute;inset:0">
+      <path id="eso" d="M265 120 L265 200" stroke="#f4a6a6" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path id="stomach" d="M265 195 C 340 175, 370 230, 350 275 C 330 318, 268 316, 258 292" stroke="#f08a8a" stroke-width="14" fill="rgba(240,138,138,.18)" stroke-linecap="round"/>
+      <path id="large" d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="#e9967a" stroke-width="28" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+      <path id="small" d="M258 300 C 250 330, 240 345, 220 352 C 190 362, 200 392, 240 392 C 300 392, 340 392, 340 420 C 340 450, 200 440, 200 470 C 200 500, 340 495, 335 525 C 330 552, 230 545, 205 560" stroke="#f9c0c0" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <g id="fibers"></g>
+    </svg>
+    <div class="label" id="lbMagen" style="left:372px;top:212px">Magen</div>
+    <div class="label" id="lbDuenn" style="left:20px;top:585px;border-color:var(--green)">Dünndarm<br><span style="color:var(--green);font-weight:600;font-size:13px">Ballaststoffe: kaum verdaut</span></div>
+    <div class="label" id="lbDick" style="left:330px;top:640px;border-color:var(--coral)">Dickdarm</div>
+  </div>
+
+  <!-- S3 Fermentation zoom -->
+  <div class="scene" id="s3">
+    <svg id="s3svg" width="540" height="960" style="position:absolute;inset:0">
+      <defs><clipPath id="lens"><circle cx="270" cy="400" r="200"/></clipPath></defs>
+      <circle cx="270" cy="400" r="206" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="6"/>
+      <g clip-path="url(#lens)">
+        <rect x="60" y="190" width="420" height="420" fill="#3a1f2b"/>
+        <g id="lensContent"></g>
+      </g>
+    </svg>
+    <div class="label" id="lbFerm" style="left:30px;top:150px;border-color:var(--coral)">Dickdarm · Fermentation</div>
+    <div class="label" id="lbScfa" style="left:300px;top:625px;border-color:var(--teal)">→ kurzkettige Fettsäuren<br>→ Gase</div>
+    <div class="label" id="lbBifi" style="left:40px;top:640px;border-color:var(--green)">Studien: Bifidobakterien ↑</div>
+    <div class="src" id="src3" style="top:735px">So et al. 2018, Am J Clin Nutr (64 Studien, n = 2.099)</div>
+  </div>
+
+  <!-- S4 Bars -->
+  <div class="scene" id="s4">
+    <div class="h1" style="top:110px;font-size:30px">Ballaststoffe pro Tag</div>
+    <svg id="s4svg" width="540" height="960" style="position:absolute;inset:0"></svg>
+    <div class="src" style="top:720px">DGE-Richtwert · Nationale Verzehrsstudie II (Median)</div>
+  </div>
+
+  <!-- S5 Table -->
+  <div class="scene" id="s5">
+    <div class="h1" style="top:120px;font-size:30px">Wer empfiehlt was?</div>
+    <div style="position:absolute;left:24px;right:24px;top:210px">
+      <table>
+        <tr><th>Institution</th><th>pro Tag</th><th>Begründung</th></tr>
+        <tr class="row" id="r1"><td>DGE</td><td class="big">≥ 30 g</td><td>Richtwert, Prävention</td></tr>
+        <tr class="row" id="r2"><td>EFSA</td><td class="big">25 g</td><td>normale Darmfunktion</td></tr>
+        <tr class="row" id="r3"><td>WHO</td><td class="big">≥ 25 g</td><td>natürlich vorkommend</td></tr>
+      </table>
+    </div>
+    <div class="src" style="top:520px">DGE · EFSA NDA 2010 · WHO-Leitlinie 2023 (Erwachsene)</div>
+  </div>
+
+  <!-- S6 Psyllium -->
+  <div class="scene" id="s6">
+    <svg id="s6svg" width="540" height="960" style="position:absolute;inset:0"></svg>
+    <div class="label" id="lbFloh" style="left:40px;top:120px;border-color:var(--green)">Flohsamenschalen binden Wasser</div>
+    <div class="ring-num" id="n1" style="left:40px;top:500px">0 %</div>
+    <div class="ring-num" id="n2" style="left:300px;top:500px">0 %</div>
+    <div class="ring-label" style="left:40px;top:640px;color:var(--green)">mit Ballaststoffen</div>
+    <div class="ring-label" style="left:300px;top:640px;color:var(--muted)">Kontrollgruppen</div>
+    <div class="label" id="lbBest" style="left:115px;top:690px;border-color:var(--green)">Am besten: Flohsamen, &gt; 10 g/Tag, ≥ 4 Wochen</div>
+    <div class="src" style="top:745px">Ansprechen bei chronischer Verstopfung · van der Schoot et al. 2022 (16 RCTs, n = 1.251)</div>
+  </div>
+
+  <!-- S7 Bloating -->
+  <div class="scene" id="s7">
+    <svg id="s7svg" width="540" height="960" style="position:absolute;inset:0"></svg>
+    <div class="label" id="lbBlaeh" style="left:50%;transform:translateX(-50%);top:600px;border-color:var(--yellow);color:var(--yellow)">⚠ Blähungen: häufiger als in Kontrollgruppen</div>
+  </div>
+
+  <!-- S8 CTA -->
+  <div class="scene" id="s8">
+    <svg id="s8svg" width="540" height="960" style="position:absolute;inset:0"></svg>
+    <div class="h1" id="ctaText" style="top:180px;font-size:34px">Schreib <span style="color:var(--yellow)">LISTE</span></div>
+    <div class="src" style="top:250px;font-size:14px">→ die ballaststoffreichsten Alltagslebensmittel (Beispiel-CTA)</div>
+    <div id="bubble" style="position:absolute;left:90px;top:330px;width:360px;padding:18px 20px;border-radius:20px;background:#fff;color:#111;font-size:20px;font-weight:600"><span id="typed"></span><span id="caret">|</span></div>
+  </div>
+
+  <!-- S9 Sources -->
+  <div class="scene" id="s9">
+    <div class="h1" style="top:150px;font-size:28px">Quellen</div>
+    <div style="position:absolute;left:40px;right:40px;top:220px;font-size:15px;line-height:1.7;color:var(--white)">
+      • DGE: Richtwert Ballaststoffe ≥ 30 g/Tag<br>
+      • Max Rubner-Institut: Nationale Verzehrsstudie II<br>
+      • EFSA NDA Panel 2010, EFSA Journal 8(3):1462<br>
+      • WHO 2023: Carbohydrate intake guideline<br>
+      • So et al. 2018, Am J Clin Nutr 107:965–983<br>
+      • van der Schoot et al. 2022, Am J Clin Nutr 116:953–969
+    </div>
+    <div class="src" style="top:470px;font-size:13px;color:var(--coral)">Mit KI erstellt · Keine individuelle Beratung · Bei anhaltenden Beschwerden ärztlich abklären</div>
+  </div>
+
+  <div class="tag">DARM-WISSEN</div>
+  <div class="draft">ENTWURF R0 · NICHT VERÖFFENTLICHEN<br>Mit KI erstellt</div>
+  <div id="captions"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const NS="http://www.w3.org/2000/svg";
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const back=x=>{x=clamp(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const prog=(t,a,b)=>clamp((t-a)/(b-a));
+const win=(t,a,b,f=.35)=>Math.min(prog(t,a,a+f),1-prog(t,b-f,b));
+const el=(tag,attrs,parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);parent.appendChild(e);return e};
+const rnd=(i)=>{const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x)};
+const DUR=50;
+
+const SCENES=[["s1",0,3.4],["s2",3.4,9.8],["s3",9.8,16.8],["s4",16.8,24.8],["s5",24.8,30.8],["s6",30.8,38.2],["s7",38.2,42.8],["s8",42.8,47.2],["s9",47.2,50.2]];
+
+const LINES=[
+ [0.15,3.2,"Das hier essen deine Darmbakterien – nicht du."],
+ [3.5,9.6,"Ballaststoffe kann dein Körper selbst nicht verdauen. Sie kommen fast unverändert im Dickdarm an."],
+ [9.9,16.6,"Dort werden einige zum Futter für deine Darmbakterien. In Studien steigen zum Beispiel die Bifidobakterien an."],
+ [16.9,24.6,"Die DGE empfiehlt mindestens 30 Gramm am Tag. Die meisten Erwachsenen essen nur etwa 18 bis 19."],
+ [24.9,30.6,"EFSA hält 25 Gramm für angemessen, die WHO empfiehlt mindestens 25."],
+ [30.9,38.0,"Bei Verstopfung sprachen in 16 Studien 66 Prozent auf Ballaststoffe an – in den Kontrollgruppen 41. Am besten: Flohsamenschalen."],
+ [38.3,42.6,"Aber: Ballaststoffe können Blähungen machen – in den Studien häufiger als ohne."],
+ [42.9,47.0,"Speicher dir das Video – und schreib LISTE für die ballaststoffreichsten Alltagslebensmittel."]
+];
+
+// ---------- S1 setup ----------
+const s1svg=$("s1svg");const flakes=[];const bugs1=[];
+for(let i=0;i<26;i++){const g=el("g",{},s1svg);el("rect",{x:-9,y:-6,width:18,height:12,rx:6,fill:i%3?"#e8d3a3":"#d9bf86"},g);flakes.push({g,x:30+rnd(i)*480,d:rnd(i+40)*1.6,s:.7+rnd(i+9)*.8,r:rnd(i+3)*360})}
+for(let i=0;i<5;i++){const g=el("g",{},s1svg);el("ellipse",{rx:22,ry:15,fill:"#ff8a65"},g);el("circle",{cx:-7,cy:-3,r:3,fill:"#0d1b2e"},g);el("circle",{cx:7,cy:-3,r:3,fill:"#0d1b2e"},g);el("path",{d:"M-6 5 Q0 10 6 5",stroke:"#0d1b2e","stroke-width":2,fill:"none"},g);bugs1.push({g,x:70+i*100,y:620+ (i%2)*60})}
+
+// ---------- S2 setup ----------
+const small=$("small"),large=$("large"),eso=$("eso"),stomach=$("stomach");
+[small,large,eso,stomach].forEach(p=>{const L=p.getTotalLength();p.style.strokeDasharray=L;p.dataset.len=L});
+const fibG=$("fibers");const fibs=[];for(let i=0;i<9;i++){fibs.push(el("rect",{width:14,height:8,rx:4,fill:"#7ed957",stroke:"#2f6b1d","stroke-width":1.5},fibG))}
+const largeLen=+large.dataset.len, smallLen=+small.dataset.len;
+
+// ---------- S3 setup ----------
+const lc=$("lensContent");const fib3=[],bug3=[],bubbles=[];
+for(let i=0;i<10;i++){const x=110+rnd(i+70)*320,y=240+rnd(i+80)*320;fib3.push({e:el("rect",{x:-22,y:-7,width:44,height:14,rx:7,fill:"#7ed957"},lc),x,y,r:rnd(i+90)*180})}
+for(let i=0;i<7;i++){const g=el("g",{},lc);const c=i<4?"#ffb199":"#c3a6ff";el("ellipse",{rx:20,ry:13,fill:c},g);el("circle",{cx:-6,cy:-3,r:2.6,fill:"#1b1b1b"},g);el("circle",{cx:6,cy:-3,r:2.6,fill:"#1b1b1b"},g);bug3.push({g,ph:rnd(i+5)*6.28,cx:150+rnd(i+11)*240,cy:260+rnd(i+13)*280})}
+for(let i=0;i<22;i++){bubbles.push({e:el("circle",{r:4+rnd(i+33)*6,fill:i%2?"rgba(77,208,200,.8)":"rgba(255,255,255,.55)"},lc),x:100+rnd(i+21)*340,d:rnd(i+44)*5})}
+
+// ---------- S4 setup ----------
+const s4=$("s4svg");const bars=[
+ {label:"Empfehlung DGE",val:30,col:"#7ed957",y:250},
+ {label:"Frauen (Median)",val:18,col:"#ff8a65",y:390},
+ {label:"Männer (Median)",val:19,col:"#ff8a65",y:530}];
+bars.forEach(b=>{b.lbl=el("text",{x:40,y:b.y-14,fill:"#f7f9fc","font-size":18,"font-weight":700,"font-family":"Inter"},s4);b.lbl.textContent=b.label;
+ el("rect",{x:40,y:b.y,width:460,height:56,rx:14,fill:"rgba(255,255,255,.07)"},s4);
+ b.r=el("rect",{x:40,y:b.y,width:0,height:56,rx:14,fill:b.col},s4);
+ b.n=el("text",{x:56,y:b.y+38,fill:"#0d1b2e","font-size":24,"font-weight":800,"font-family":"Inter"},s4)});
+const gapLine=el("path",{d:"",stroke:"#ffd43b","stroke-width":3,fill:"none","stroke-dasharray":"6 6"},s4);
+const gapTxt=el("text",{x:400,y:665,fill:"#ffd43b","font-size":22,"font-weight":800,"font-family":"Inter","text-anchor":"middle"},s4);gapTxt.textContent="Lücke ≈ 11–12 g";
+
+// ---------- S6 setup ----------
+const s6=$("s6svg");
+el("path",{d:"M190 180 L210 420 Q212 440 232 440 L308 440 Q328 440 330 420 L350 180 Z",fill:"rgba(255,255,255,.06)",stroke:"rgba(255,255,255,.6)","stroke-width":3},s6);
+const water=el("path",{d:"",fill:"rgba(77,208,200,.35)"},s6);
+const seeds=[];for(let i=0;i<16;i++){seeds.push({e:el("ellipse",{rx:5,ry:3,fill:"#e9dcc0"},s6),x:220+rnd(i+60)*100,d:rnd(i+61)*1.2})}
+const gel=el("path",{d:"",fill:"rgba(233,220,192,.0)"},s6);
+const ring=(cx,cy,col)=>{el("circle",{cx,cy,r:70,fill:"none",stroke:"rgba(255,255,255,.1)","stroke-width":14},s6);const c=el("circle",{cx,cy,r:70,fill:"none",stroke:col,"stroke-width":14,"stroke-linecap":"round",transform:`rotate(-90 ${cx} ${cy})`},s6);const L=2*Math.PI*70;c.style.strokeDasharray=L;c.style.strokeDashoffset=L;return {c,L}};
+const ring1=ring(140,530,"#7ed957"),ring2=ring(400,530,"#9fb1c9");
+
+// ---------- S7 setup ----------
+const s7=$("s7svg");
+const belly=el("ellipse",{cx:270,cy:400,rx:120,ry:140,fill:"rgba(244,166,166,.18)",stroke:"#f4a6a6","stroke-width":4},s7);
+const gut7=el("path",{d:"M200 360 C 230 330, 310 330, 340 360 C 370 390, 330 430, 270 430 C 210 430, 170 400, 200 360",stroke:"#e9967a","stroke-width":16,fill:"none","stroke-linecap":"round"},s7);
+const b7=[];for(let i=0;i<10;i++)b7.push({e:el("circle",{r:5+rnd(i+120)*7,fill:"rgba(255,212,59,.7)"},s7),x:200+rnd(i+121)*140,d:rnd(i+122)*2});
+
+// ---------- S8 setup ----------
+const s8=$("s8svg");
+const heart=el("path",{d:"M270 560 C 250 540, 215 545, 215 575 C 215 605, 270 630, 270 640 C 270 630, 325 605, 325 575 C 325 545, 290 540, 270 560 Z",fill:"#ff8a65"},s8);
+const saveIcon=el("path",{d:"M380 545 L380 640 L410 618 L440 640 L440 545 Z",fill:"none",stroke:"#ffd43b","stroke-width":5,"stroke-linejoin":"round"},s8);
+
+// ---------- captions ----------
+const cap=$("captions");
+function captions(t){
+  const L=LINES.find(l=>t>=l[0]&&t<=l[1]+0.25);
+  if(!L){cap.innerHTML="";return}
+  const words=L[2].split(" ");const p=prog(t,L[0],L[1]);
+  const idx=Math.min(words.length-1,Math.floor(p*words.length));
+  const CH=4;const start=Math.floor(idx/CH)*CH,end=Math.min(words.length,start+CH);
+  const wd=(L[1]-L[0])/words.length;let h="";
+  for(let i=start;i<end;i++){const pop=i===idx?back(prog(t,L[0]+idx*wd,L[0]+idx*wd+.18)):1;
+    h+=`<span class="w ${i===idx?"cur":""}" style="transform:scale(${(0.7+0.3*pop).toFixed(3)})">${words[i]}</span>`}
+  cap.innerHTML=h;
+}
+
+// ---------- render ----------
+window.render=function(t){
+  $("progress").style.width=(prog(t,0,DUR)*100)+"%";
+  for(const [id,a,b] of SCENES){$(id).style.opacity=win(t,a,b).toFixed(3)}
+
+  // S1
+  if(t<3.6){
+    flakes.forEach((f,i)=>{const p=prog(t,f.d,f.d+2.2);const y=-30+ease(p)*(260+rnd(i+7)*360);f.g.setAttribute("transform",`translate(${f.x},${y}) rotate(${f.r+p*200}) scale(${f.s})`)});
+    bugs1.forEach((b,i)=>{const p=back(prog(t,.6+i*.15,1.1+i*.15));b.g.setAttribute("transform",`translate(${b.x},${b.y+Math.sin(t*6+i)*6}) scale(${p})`)});
+    const tp=back(prog(t,.1,.7));$("s1title").style.transform=`scale(${0.7+0.3*tp})`;$("s1title").style.opacity=prog(t,.1,.4);
+  }
+  // S2
+  if(t>3.2&&t<10){
+    const d=(p,a,b)=>{p.style.strokeDashoffset=(+p.dataset.len)*(1-ease(prog(t,a,b)))};
+    d(eso,3.5,4.0);d(stomach,3.7,4.5);d(small,4.2,5.8);d(large,5.2,6.8);
+    fibs.forEach((f,i)=>{const p=prog(t,5.6+i*.28,8.6+i*.12);let pt;
+      if(p<.7){pt=small.getPointAtLength(smallLen*ease(p/.7))}else{pt=large.getPointAtLength(largeLen*ease((p-.7)/.3)*.45)}
+      f.setAttribute("x",pt.x-7);f.setAttribute("y",pt.y-4);f.setAttribute("opacity",p>0?1:0)});
+    $("lbMagen").style.opacity=prog(t,4.3,4.7);$("lbDuenn").style.opacity=prog(t,5.6,6.0);$("lbDick").style.opacity=prog(t,6.6,7.0);
+    $("lbDuenn").style.transform=`translateX(${(1-ease(prog(t,5.6,6.1)))*-30}px)`;
+  }
+  // S3
+  if(t>9.6&&t<17){
+    const lt=t-9.8;
+    fib3.forEach((f,i)=>{const sc=1-0.75*ease(prog(t,11.5+i*.3,15.5+i*.1));f.e.setAttribute("transform",`translate(${f.x},${f.y}) rotate(${f.r}) scale(${sc})`)});
+    bug3.forEach((b,i)=>{const tg=fib3[i%fib3.length];const k=ease(prog(t,10.4,12.5));const x=b.cx+(tg.x-b.cx)*k*0.8+Math.sin(lt*2+b.ph)*14,y=b.cy+(tg.y-b.cy)*k*0.8+Math.cos(lt*2.4+b.ph)*10;b.g.setAttribute("transform",`translate(${x},${y}) rotate(${Math.sin(lt*3+b.ph)*12})`)});
+    bubbles.forEach((b,i)=>{const p=((lt-1.8-b.d)%3+3)%3/3;const vis=t>11.8?1:0;b.e.setAttribute("cx",b.x+Math.sin(p*8+i)*8);b.e.setAttribute("cy",600-p*380);b.e.setAttribute("opacity",(vis*(1-p)).toFixed(2))});
+    $("lbFerm").style.opacity=prog(t,10.1,10.5);$("lbScfa").style.opacity=prog(t,12.3,12.7);$("lbBifi").style.opacity=prog(t,14.0,14.4);
+    $("lbBifi").style.transform=`scale(${back(prog(t,14.0,14.5))})`;$("src3").style.opacity=prog(t,14.2,14.6);
+  }
+  // S4
+  if(t>16.6&&t<25){
+    bars.forEach((b,i)=>{const p=ease(prog(t,17.3+i*1.6,18.5+i*1.6));const w=460*(b.val/30)*p;b.r.setAttribute("width",Math.max(0,w));b.n.textContent=Math.round(b.val*p)+" g";b.n.setAttribute("opacity",p>.15?1:0);b.lbl.setAttribute("opacity",prog(t,17.1+i*1.6,17.4+i*1.6))});
+    const gp=ease(prog(t,22.2,23));const x30=40+460,x19=40+460*19/30;
+    gapLine.setAttribute("d",`M${x19} 600 L${x19+(x30-x19)*gp} 600`);gapTxt.setAttribute("opacity",prog(t,22.8,23.2));
+    gapLine.setAttribute("d",`M${x19} 610 L${x19} 625 L${x19+(x30-x19)*gp} 625 L${x19+(x30-x19)*gp} 610`);gapTxt.setAttribute("y",660);
+  }
+  // S5
+  if(t>24.6&&t<31){["r1","r2","r3"].forEach((r,i)=>{const p=back(prog(t,25.3+i*.9,25.9+i*.9));const e=$(r);e.style.opacity=prog(t,25.3+i*.9,25.6+i*.9);e.style.transform=`translateX(${(1-p)*120}px)`})}
+  // S6
+  if(t>30.6&&t<38.4){
+    const wl=ease(prog(t,31.0,31.8));const top=440-wl*200;
+    const xl=190+(top-180)/260*20*-1+20*(1-(top-180)/260), xr=350-20*(1-(top-180)/260);
+    water.setAttribute("d",`M${210-((440-top)/260)*20+0} ${top} L${330+((440-top)/260)*20} ${top} L330 420 Q328 440 308 440 L232 440 Q212 440 210 420 Z`);
+    seeds.forEach((s,i)=>{const p=prog(t,31.8+s.d,32.8+s.d);const y=150+ease(p)*(top-150+20+rnd(i+62)*150);const sw=1+2.2*ease(prog(t,33+i*.05,34.4));s.e.setAttribute("cx",s.x);s.e.setAttribute("cy",Math.min(y,425));s.e.setAttribute("rx",5*sw);s.e.setAttribute("ry",3*sw);s.e.setAttribute("opacity",p>0?.95:0)});
+    const g=ease(prog(t,33.4,34.8));water.setAttribute("fill",`rgba(${77+g*150},${208+g*12},${200-g*8},${0.35+g*0.4})`);
+    const r1=ease(prog(t,34.6,36.0)),r2=ease(prog(t,35.0,36.4));
+    ring1.c.style.strokeDashoffset=ring1.L*(1-.66*r1);ring2.c.style.strokeDashoffset=ring2.L*(1-.41*r2);
+    $("n1").textContent=Math.round(66*r1)+" %";$("n2").textContent=Math.round(41*r2)+" %";
+    $("lbFloh").style.opacity=prog(t,31.2,31.6);$("lbBest").style.opacity=prog(t,36.6,37.0);$("lbBest").style.transform=`scale(${back(prog(t,36.6,37.1))})`;
+  }
+  // S7
+  if(t>38&&t<43){
+    const wob=1+0.04*Math.sin((t-38.2)*9)*prog(t,38.6,39);belly.setAttribute("transform",`translate(270 400) scale(${wob}) translate(-270 -400)`);
+    b7.forEach((b,i)=>{const p=(((t-38.6-b.d)%1.6)+1.6)%1.6/1.6;b.e.setAttribute("cx",b.x+Math.sin(p*6+i)*6);b.e.setAttribute("cy",430-p*170);b.e.setAttribute("opacity",t>38.6?(1-p).toFixed(2):0)});
+    $("lbBlaeh").style.opacity=prog(t,39.4,39.8);
+  }
+  // S8
+  if(t>42.6&&t<47.4){
+    const full="LISTE 🙌";const n=Math.floor(prog(t,43.6,44.8)*full.length);$("typed").textContent=[...full].slice(0,n).join("");
+    $("caret").style.opacity=(Math.floor(t*3)%2)?1:0;$("bubble").style.transform=`scale(${back(prog(t,43.1,43.6))})`;
+    heart.setAttribute("transform",`translate(270 590) scale(${back(prog(t,45,45.5))*(1+0.06*Math.sin(t*10))}) translate(-270 -590)`);
+    saveIcon.setAttribute("transform",`translate(0 ${-Math.abs(Math.sin((t-45.4)*5))*12*prog(t,45.4,45.6)})`);saveIcon.setAttribute("opacity",prog(t,45.4,45.7));
+  }
+  captions(t);
+};
+render(0);
+</script>
+</body>
+</html>

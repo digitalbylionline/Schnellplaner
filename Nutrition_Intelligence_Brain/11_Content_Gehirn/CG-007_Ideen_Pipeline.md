@@ -13,7 +13,7 @@ tags: [content-gehirn]
 
 | # | Idee | Linie | Körpervorgang → Ernährung | Akte / Aussagen | Status |
 |---|---|---|---|---|---|
-| 1 | „Das essen deine Darmbakterien – nicht du" | A | Fermentation im Dickdarm → Ballaststoffe | [[BIO-002_Darmmikrobiom_und_Ballaststoffe]] A-DARM-02/04 | 📄 (Skript-Entwurf in [[CG-001_Kernformat_Koerper_trifft_Ernaehrung]]) |
+| 1 | „Das essen deine Darmbakterien – nicht du" | A | Fermentation im Dickdarm → Ballaststoffe | [[BIO-002_Darmmikrobiom_und_Ballaststoffe]] A-DARM-02/04 | 🎬 Prototyp ohne Avatar (Entwurf, nicht veröffentlichen): `07_Content_Wissen/Beispielvideo/VID-0001_Ballaststoffe_Entwurf.mp4` |
 | 2 | Flohsamen-Gel-Experiment im Glas | A | Wasserbindung → Verstopfung | BIO-002 A-DARM-03 | 📄 |
 | 3 | „Seit Jahren Kot im Darm?" – Mythos-Check | C | Darmpassage → Ballaststoffe | BIO-002 + neue Quelle | 🔬 |
 | 4 | „30 g – und warum fast niemand sie schafft" + Tagesbeispiel | A/B | – | BIO-002 A-DARM-02 + BLS-Daten | 🔬 |
