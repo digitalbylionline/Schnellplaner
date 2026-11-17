@@ -45,11 +45,28 @@
 
   <!-- S2 Gut map -->
   <div class="scene" id="s2">
-    <svg width="540" height="960" style="position:absolute;inset:0">
+    <svg id="s2svg" width="540" height="960" style="position:absolute;inset:0;transform-origin:395px 470px">
+      <defs>
+        <linearGradient id="gL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ef9f86"/><stop offset="1" stop-color="#c8644f"/></linearGradient>
+        <radialGradient id="gS" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#f6a9a0"/><stop offset="1" stop-color="#cf6f6f"/></radialGradient>
+        <mask id="mSmall" maskUnits="userSpaceOnUse"><path id="smallM" d="M258 300 C 250 330, 235 345, 215 350 C 185 358, 185 380, 215 383 C 260 388, 330 372, 350 392 C 368 412, 320 420, 280 418 C 230 416, 185 420, 190 445 C 195 470, 300 455, 345 465 C 372 472, 365 500, 330 500 C 280 500, 200 490, 195 515 C 192 540, 260 545, 300 540 C 330 536, 345 548, 320 556 C 290 565, 240 560, 205 560" stroke="#fff" stroke-width="26" fill="none" stroke-linecap="round"/></mask>
+        <mask id="mLarge" maskUnits="userSpaceOnUse"><path id="largeM" d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="#fff" stroke-width="50" fill="none" stroke-linecap="round" stroke-linejoin="round"/></mask>
+      </defs>
+      <path id="torso" d="M200 95 C 200 70, 340 70, 340 95 L 345 110 C 420 120, 455 160, 462 230 C 472 360, 470 560, 455 700 C 450 735, 90 735, 85 700 C 70 560, 68 360, 78 230 C 85 160, 120 120, 195 110 Z" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,.16)" stroke-width="2"/>
       <path id="eso" d="M265 120 L265 200" stroke="#f4a6a6" stroke-width="10" fill="none" stroke-linecap="round"/>
-      <path id="stomach" d="M265 195 C 340 175, 370 230, 350 275 C 330 318, 268 316, 258 292" stroke="#f08a8a" stroke-width="14" fill="rgba(240,138,138,.18)" stroke-linecap="round"/>
-      <path id="large" d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="#e9967a" stroke-width="28" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-      <path id="small" d="M258 300 C 250 330, 240 345, 220 352 C 190 362, 200 392, 240 392 C 300 392, 340 392, 340 420 C 340 450, 200 440, 200 470 C 200 500, 340 495, 335 525 C 330 552, 230 545, 205 560" stroke="#f9c0c0" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <path id="stomach" d="M265 195 C 340 175, 370 230, 350 275 C 330 318, 268 316, 258 292" stroke="#d97272" stroke-width="12" fill="url(#gS)" stroke-linecap="round"/>
+      <g mask="url(#mLarge)">
+        <path d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="url(#gL)" stroke-width="36" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="#9c4535" stroke-width="36" fill="none" stroke-dasharray="2.5 14" opacity=".55" stroke-linejoin="round"/>
+        <path d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="#ffc7b5" stroke-width="9" fill="none" opacity=".35" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g mask="url(#mSmall)">
+        <path d="M258 300 C 250 330, 235 345, 215 350 C 185 358, 185 380, 215 383 C 260 388, 330 372, 350 392 C 368 412, 320 420, 280 418 C 230 416, 185 420, 190 445 C 195 470, 300 455, 345 465 C 372 472, 365 500, 330 500 C 280 500, 200 490, 195 515 C 192 540, 260 545, 300 540 C 330 536, 345 548, 320 556 C 290 565, 240 560, 205 560" stroke="#b85c5c" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M258 300 C 250 330, 235 345, 215 350 C 185 358, 185 380, 215 383 C 260 388, 330 372, 350 392 C 368 412, 320 420, 280 418 C 230 416, 185 420, 190 445 C 195 470, 300 455, 345 465 C 372 472, 365 500, 330 500 C 280 500, 200 490, 195 515 C 192 540, 260 545, 300 540 C 330 536, 345 548, 320 556 C 290 565, 240 560, 205 560" stroke="#f3a9a9" stroke-width="12" fill="none" stroke-linecap="round"/>
+        <path d="M258 300 C 250 330, 235 345, 215 350 C 185 358, 185 380, 215 383 C 260 388, 330 372, 350 392 C 368 412, 320 420, 280 418 C 230 416, 185 420, 190 445 C 195 470, 300 455, 345 465 C 372 472, 365 500, 330 500 C 280 500, 200 490, 195 515 C 192 540, 260 545, 300 540 C 330 536, 345 548, 320 556 C 290 565, 240 560, 205 560" stroke="#ffe0e0" stroke-width="3" fill="none" opacity=".6" stroke-linecap="round"/>
+      </g>
+      <path id="large" d="M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690" stroke="none" fill="none"/>
+      <path id="small" d="M258 300 C 250 330, 235 345, 215 350 C 185 358, 185 380, 215 383 C 260 388, 330 372, 350 392 C 368 412, 320 420, 280 418 C 230 416, 185 420, 190 445 C 195 470, 300 455, 345 465 C 372 472, 365 500, 330 500 C 280 500, 200 490, 195 515 C 192 540, 260 545, 300 540 C 330 536, 345 548, 320 556 C 290 565, 240 560, 205 560" stroke="none" fill="none"/>
       <g id="fibers"></g>
     </svg>
     <div class="label" id="lbMagen" style="left:372px;top:212px">Magen</div>
@@ -64,6 +81,9 @@
       <circle cx="270" cy="400" r="206" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="6"/>
       <g clip-path="url(#lens)">
         <rect x="60" y="190" width="420" height="420" fill="#3a1f2b"/>
+        <path d="M60 190 L480 190 L480 262 C 465 262, 462 238, 447 238 C 432 238, 430 262, 415 262 C 400 262, 397 238, 382 238 C 367 238, 365 262, 350 262 C 335 262, 332 238, 317 238 C 302 238, 300 262, 285 262 C 270 262, 267 238, 252 238 C 237 238, 235 262, 220 262 C 205 262, 202 238, 187 238 C 172 238, 170 262, 155 262 C 140 262, 137 238, 122 238 C 107 238, 105 262, 90 262 C 75 262, 72 238, 60 238 Z" fill="#c96b6b"/>
+        <path d="M60 610 L480 610 L480 538 C 465 538, 462 562, 447 562 C 432 562, 430 538, 415 538 C 400 538, 397 562, 382 562 C 367 562, 365 538, 350 538 C 335 538, 332 562, 317 562 C 302 562, 300 538, 285 538 C 270 538, 267 562, 252 562 C 237 562, 235 538, 220 538 C 205 538, 202 562, 187 562 C 172 562, 170 538, 155 538 C 140 538, 137 562, 122 562 C 107 562, 105 538, 90 538 C 75 538, 72 562, 60 562 Z" fill="#c96b6b"/>
+        <text x="270" y="228" fill="rgba(255,255,255,.55)" font-size="12" font-family="Inter" font-weight="700" text-anchor="middle">Darmwand</text>
         <g id="lensContent"></g>
       </g>
     </svg>
@@ -170,15 +190,15 @@ for(let i=0;i<26;i++){const g=el("g",{},s1svg);el("rect",{x:-9,y:-6,width:18,hei
 for(let i=0;i<5;i++){const g=el("g",{},s1svg);el("ellipse",{rx:22,ry:15,fill:"#ff8a65"},g);el("circle",{cx:-7,cy:-3,r:3,fill:"#0d1b2e"},g);el("circle",{cx:7,cy:-3,r:3,fill:"#0d1b2e"},g);el("path",{d:"M-6 5 Q0 10 6 5",stroke:"#0d1b2e","stroke-width":2,fill:"none"},g);bugs1.push({g,x:70+i*100,y:620+ (i%2)*60})}
 
 // ---------- S2 setup ----------
-const small=$("small"),large=$("large"),eso=$("eso"),stomach=$("stomach");
-[small,large,eso,stomach].forEach(p=>{const L=p.getTotalLength();p.style.strokeDasharray=L;p.dataset.len=L});
+const small=$("small"),large=$("large"),eso=$("eso"),stomach=$("stomach"),smallM=$("smallM"),largeM=$("largeM");
+[small,large,eso,stomach,smallM,largeM].forEach(p=>{const L=p.getTotalLength();p.style.strokeDasharray=L;p.dataset.len=L});
 const fibG=$("fibers");const fibs=[];for(let i=0;i<9;i++){fibs.push(el("rect",{width:14,height:8,rx:4,fill:"#7ed957",stroke:"#2f6b1d","stroke-width":1.5},fibG))}
 const largeLen=+large.dataset.len, smallLen=+small.dataset.len;
 
 // ---------- S3 setup ----------
 const lc=$("lensContent");const fib3=[],bug3=[],bubbles=[];
-for(let i=0;i<10;i++){const x=110+rnd(i+70)*320,y=240+rnd(i+80)*320;fib3.push({e:el("rect",{x:-22,y:-7,width:44,height:14,rx:7,fill:"#7ed957"},lc),x,y,r:rnd(i+90)*180})}
-for(let i=0;i<7;i++){const g=el("g",{},lc);const c=i<4?"#ffb199":"#c3a6ff";el("ellipse",{rx:20,ry:13,fill:c},g);el("circle",{cx:-6,cy:-3,r:2.6,fill:"#1b1b1b"},g);el("circle",{cx:6,cy:-3,r:2.6,fill:"#1b1b1b"},g);bug3.push({g,ph:rnd(i+5)*6.28,cx:150+rnd(i+11)*240,cy:260+rnd(i+13)*280})}
+for(let i=0;i<10;i++){const x=110+rnd(i+70)*320,y=290+rnd(i+80)*220;fib3.push({e:el("rect",{x:-22,y:-7,width:44,height:14,rx:7,fill:"#7ed957"},lc),x,y,r:rnd(i+90)*180})}
+for(let i=0;i<7;i++){const g=el("g",{},lc);const c=i<4?"#ffb199":"#c3a6ff";el("ellipse",{rx:20,ry:13,fill:c},g);el("circle",{cx:-6,cy:-3,r:2.6,fill:"#1b1b1b"},g);el("circle",{cx:6,cy:-3,r:2.6,fill:"#1b1b1b"},g);bug3.push({g,ph:rnd(i+5)*6.28,cx:150+rnd(i+11)*240,cy:300+rnd(i+13)*200})}
 for(let i=0;i<22;i++){bubbles.push({e:el("circle",{r:4+rnd(i+33)*6,fill:i%2?"rgba(77,208,200,.8)":"rgba(255,255,255,.55)"},lc),x:100+rnd(i+21)*340,d:rnd(i+44)*5})}
 
 // ---------- S4 setup ----------
@@ -205,7 +225,10 @@ const ring1=ring(140,530,"#7ed957"),ring2=ring(400,530,"#9fb1c9");
 // ---------- S7 setup ----------
 const s7=$("s7svg");
 const belly=el("ellipse",{cx:270,cy:400,rx:120,ry:140,fill:"rgba(244,166,166,.18)",stroke:"#f4a6a6","stroke-width":4},s7);
-const gut7=el("path",{d:"M200 360 C 230 330, 310 330, 340 360 C 370 390, 330 430, 270 430 C 210 430, 170 400, 200 360",stroke:"#e9967a","stroke-width":16,fill:"none","stroke-linecap":"round"},s7);
+const g7=el("g",{transform:"translate(270 405) scale(0.42) translate(-270 -500)"},s7);
+el("path",{d:"M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690",stroke:"#d9826b","stroke-width":36,fill:"none","stroke-linejoin":"round","stroke-linecap":"round"},g7);
+el("path",{d:"M205 560 L 160 560 C 145 560, 140 550, 140 535 L 140 345 C 140 330, 150 322, 165 322 L 375 322 C 392 322, 400 330, 400 345 L 400 585 C 400 610, 380 620, 330 625 L 300 628 L 300 690",stroke:"#9c4535","stroke-width":36,fill:"none","stroke-dasharray":"2.5 14",opacity:.55},g7);
+el("path",{d:"M258 300 C 250 330, 235 345, 215 350 C 185 358, 185 380, 215 383 C 260 388, 330 372, 350 392 C 368 412, 320 420, 280 418 C 230 416, 185 420, 190 445 C 195 470, 300 455, 345 465 C 372 472, 365 500, 330 500 C 280 500, 200 490, 195 515 C 192 540, 260 545, 300 540 C 330 536, 345 548, 320 556 C 290 565, 240 560, 205 560",stroke:"#f3a9a9","stroke-width":13,fill:"none","stroke-linecap":"round"},g7);
 const b7=[];for(let i=0;i<10;i++)b7.push({e:el("circle",{r:5+rnd(i+120)*7,fill:"rgba(255,212,59,.7)"},s7),x:200+rnd(i+121)*140,d:rnd(i+122)*2});
 
 // ---------- S8 setup ----------
@@ -239,13 +262,13 @@ window.render=function(t){
     const tp=back(prog(t,.1,.7));$("s1title").style.transform=`scale(${0.7+0.3*tp})`;$("s1title").style.opacity=prog(t,.1,.4);
   }
   // S2
-  if(t>3.2&&t<10){
+  if(t>3.2&&t<10.2){
     const d=(p,a,b)=>{p.style.strokeDashoffset=(+p.dataset.len)*(1-ease(prog(t,a,b)))};
-    d(eso,3.5,4.0);d(stomach,3.7,4.5);d(small,4.2,5.8);d(large,5.2,6.8);
+    d(eso,3.5,4.0);d(stomach,3.7,4.5);d(smallM,4.2,5.8);d(largeM,5.2,6.8);$("s2svg").style.transform=`scale(${1+2.2*ease(prog(t,9.1,9.9))})`;
     fibs.forEach((f,i)=>{const p=prog(t,5.6+i*.28,8.6+i*.12);let pt;
       if(p<.7){pt=small.getPointAtLength(smallLen*ease(p/.7))}else{pt=large.getPointAtLength(largeLen*ease((p-.7)/.3)*.45)}
       f.setAttribute("x",pt.x-7);f.setAttribute("y",pt.y-4);f.setAttribute("opacity",p>0?1:0)});
-    $("lbMagen").style.opacity=prog(t,4.3,4.7);$("lbDuenn").style.opacity=prog(t,5.6,6.0);$("lbDick").style.opacity=prog(t,6.6,7.0);
+    const lo=1-prog(t,8.8,9.1);$("lbMagen").style.opacity=prog(t,4.3,4.7)*lo;$("lbDuenn").style.opacity=prog(t,5.6,6.0)*lo;$("lbDick").style.opacity=prog(t,6.6,7.0)*lo;
     $("lbDuenn").style.transform=`translateX(${(1-ease(prog(t,5.6,6.1)))*-30}px)`;
   }
   // S3
@@ -253,7 +276,7 @@ window.render=function(t){
     const lt=t-9.8;
     fib3.forEach((f,i)=>{const sc=1-0.75*ease(prog(t,11.5+i*.3,15.5+i*.1));f.e.setAttribute("transform",`translate(${f.x},${f.y}) rotate(${f.r}) scale(${sc})`)});
     bug3.forEach((b,i)=>{const tg=fib3[i%fib3.length];const k=ease(prog(t,10.4,12.5));const x=b.cx+(tg.x-b.cx)*k*0.8+Math.sin(lt*2+b.ph)*14,y=b.cy+(tg.y-b.cy)*k*0.8+Math.cos(lt*2.4+b.ph)*10;b.g.setAttribute("transform",`translate(${x},${y}) rotate(${Math.sin(lt*3+b.ph)*12})`)});
-    bubbles.forEach((b,i)=>{const p=((lt-1.8-b.d)%3+3)%3/3;const vis=t>11.8?1:0;b.e.setAttribute("cx",b.x+Math.sin(p*8+i)*8);b.e.setAttribute("cy",600-p*380);b.e.setAttribute("opacity",(vis*(1-p)).toFixed(2))});
+    bubbles.forEach((b,i)=>{const p=((lt-1.8-b.d)%3+3)%3/3;const vis=t>11.8?1:0;b.e.setAttribute("cx",b.x+Math.sin(p*8+i)*8);b.e.setAttribute("cy",530-p*260);b.e.setAttribute("opacity",(vis*(1-p)).toFixed(2))});
     $("lbFerm").style.opacity=prog(t,10.1,10.5);$("lbScfa").style.opacity=prog(t,12.3,12.7);$("lbBifi").style.opacity=prog(t,14.0,14.4);
     $("lbBifi").style.transform=`scale(${back(prog(t,14.0,14.5))})`;$("src3").style.opacity=prog(t,14.2,14.6);
   }
