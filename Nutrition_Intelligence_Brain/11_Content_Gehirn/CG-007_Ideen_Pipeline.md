@@ -28,7 +28,6 @@ tags: [content-gehirn]
 | 13 | „Warum Crash-Diäten scheitern" | A | Energiebilanz | [[Q-GEW-01]] → neue Akte | 🔬 |
 | 14 | Honig bei Husten – was Studien sagen (inkl. Baby-Warnung) | C | – | [[Q-HON-01]] → neue Akte | 🔬 |
 | 15 | Ingwer bei Übelkeit – wo es Belege gibt und wo nicht | A | Übelkeit | [[LM-002_Ingwer]] A-ING-01/02 | 📄 |
-
 | 16 | Infografik „Was füttert dein Darmmikrobiom?" (Loop) | Grafik | Fermentation → Ballaststoffe/Polyphenole | BIO-002 + neue Quellen | 🔬 |
 | 17 | „Was deine Gase über deinen Darm sagen" (Whiteboard-Tabelle) | A | Fermentation/Gasbildung | neue Akte | 🔬 |
 | 18 | Weinende Darm-Figur: „Lebensmittel, die bei Verstopfung helfen können" (Kiwi, Flohsamen, Pflaumen …) | Animation | Verstopfung | BIO-002 A-DARM-03 + Kiwi/Pflaumen-Studien | 🔬 |
