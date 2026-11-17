@@ -129,3 +129,64 @@ Zusätzlich analysiert: Reel `DfzqsqPiFcg` (81 s, 27,7 Tsd. Aufrufe, **494 Komme
 - [ ] Erstes Freebie aus [[BIO-002_Darmmikrobiom_und_Ballaststoffe]] ableiten (nach R1).
 - [ ] Prüfen, ob Instagram-Automationen ein Folgen wirklich voraussetzen.
 - [ ] Mythos „Darmablagerungen" in eine Akte aufnehmen (starkes „Stimmt das?"-Thema).
+
+---
+
+## Account 2: @doc.felix (Instagram) – Abruf 17.11.2026
+Talking-Head eines (laut Name) Arztes, Rezepte „medizinisch optimiert", Caption erklärt jede Zutat einzeln.
+
+| Reel | Aufrufe | Kommentare | Länge | Thema |
+|---|---|---|---|---|
+| DfpiK-MNP2M | 430,8 Tsd. | 50 | 24 s | Weißkohl-Rezept + Vitamin-C-Erkältungsfakt |
+| Dfm9XgMtpcO | 381,4 Tsd. | 223 | 95 s | „Anzeige" – Weihnachts-Cookie-Cups |
+| DfuryRstDjh | 360,1 Tsd. | 59 | 52 s | Periode als Gesundheitssignal |
+| Dfr94ApNebx | 231 Tsd. | 102 | 112 s | „Anzeige" HelloFresh |
+| Dfz1XtQNT54 | 204,2 Tsd. | 56 | 29 s | Pfefferminzöl bei Kopfschmerz |
+| übrige | 0,2–64 Tsd. | – | – | Rezepte mit Zutaten-Erklärung (teils doppelt gepostet) |
+
+**Learnings**
+- **Rezept + Zutaten-Steckbrief in der Caption** („🫑 Paprika enthält … 🍋 Zitrone …") – Wissen wird in der Caption geliefert, das Video bleibt kurz.
+- **Kurze Videos (24–29 s) mit einem Fakt** laufen am besten; lange Rezeptvideos (75–117 s) oft schwach.
+- **Saubere Werbekennzeichnung** („Anzeige | Gemeinsam mit …") am Anfang der Caption – gutes Vorbild.
+- Kommentarquote niedrig (< 0,1 %) → kein Keyword-Funnel; Reichweite über Aha-Fakten.
+- **Fachlich prüfen:** Die Aussage „Vitamin C halbiert das Erkältungsrisiko" gilt laut Cochrane-Review nach Kenntnisstand von Claude nur für Menschen unter starker körperlicher Belastung, nicht für die Allgemeinbevölkerung (Quelle für Akte recherchieren). Pfefferminzöl bei Spannungskopfschmerz: Leitlinienlage prüfen.
+
+## Account 3: @_juleklein_ (Instagram) – Abruf 17.11.2026
+Persönliche Geschichte (seit dem 1. Lebensjahr rheumatoide Arthritis, laut eigener Aussage seit Jahren in Remission ohne Medikamente) + „antientzündliche & darmfreundliche" Rezepte.
+
+| Reel | Aufrufe | Kommentare | Länge | Thema |
+|---|---|---|---|---|
+| Dfh9oT6IQdl | 409,7 Tsd. | 57 | 18 s | Kichererbsen-Bark (Rezept) |
+| DfsEhmIIFl- | 155,8 Tsd. | **835** | 17 s | **„Kommentiere WAHRHEIT → kostenloser Zucker-Check per DM"** |
+| DfZ9AoGIQqe | 153 Tsd. | 30 | 43 s | Kürbis-Schneidetrick |
+| DfznSNCo7LJ | 126,9 Tsd. | 39 | 17 s | „antientzündlicher" Ofenpfannkuchen |
+| Dfl1jPgoTrm | 123,1 Tsd. | 14 | 18 s | Serie „Tag 9 von 30" |
+| DffY56LISEr | 116,8 Tsd. | 23 | 28 s | „Anzeige" + Rabattcode |
+
+**Learnings**
+- **Freebie-Funnel genau wie gewünscht:** Keyword „WAHRHEIT" → kostenloser „Zucker-Check" per DM → 835 Kommentare bei 156 Tsd. Aufrufen (0,54 %). Kein Produkt, sondern Wissen als Lead-Magnet. ✅ Vorbild für unseren Funnel.
+- **Sehr kurze Rezeptclips (13–29 s)**, Rezept in der Caption, „Speicher dir das Rezept".
+- **Serienformat** „Tag X von 30" bindet Follower.
+- **Alltagstricks** (Kürbis schneiden) bringen Reichweite ohne Gesundheitsclaim.
+- **Nicht übertragbar:** persönliche Krankheitsgeschichte (ein KI-Avatar darf keine erfinden). Das Label „antientzündlich" für einzelne Rezepte ist fachlich nicht belegt ([[BIO-001_Entzuendung_akut_und_chronisch]], A-ENT-08) und rechtlich krankheitsnah.
+
+## International: Outlier-Suche (EN/ES, ab 08/2026, ≥ 200 Tsd. Aufrufe)
+| Account | Aufrufe | × Median | Format | Learning |
+|---|---|---|---|---|
+| @sahoom_guthealth (EN) | 2,7 Mio. | 13,9× | Animierte Infografik „What feeds your gut microbiome?" (Split-Screen) | **Kleiner Account (3,9 Tsd. Follower), Infografik ohne Sprecher, Loop** |
+| @pharmapathshala1425 (EN) | 1,4 Mio. | 95× | Gleiche Infografik-Idee | Format funktioniert reproduzierbar |
+| @albaortin_pni (ES) | 823 Tsd. | 343× | Expertin mit Whiteboard-Tabelle „Was deine Gase über deinen Darm sagen" | **Tabelle zum Durchgehen**, Talking Head, 3 Tsd. Follower |
+| @americanfarmwellness (ES) | 4,3 Mio. | 11× | Durchsichtiges Darm-Modell + CGI, Keyword „Detox" | Gleiches Muster wie Karl (Karl wirkt wie eine deutsche Adaption) |
+| @dre.daily.wellness (EN) | 2,3 Mio. | 13× | Darm-Modell, Essen hineinkippen, #syntheticperformer (KI), „comment TEA" | KI-Avatar + Darm-Modell + Keyword |
+| @recetaspilargomez (ES) | 2,7 Mio. | 23× | Darm-Modell + „20 Minuten auf dem Klo" + Kiwi-mit-Schale-Smoothie | **Identischer Hook wie Karl** → Muster wandert zwischen Sprachen |
+| @alimentanatura (ES) | 1,7 Mio. | 19× | Statische Grafik „Meiden vs. Bevorzugen bei Blähbauch" | Listen-Grafik, in 1 h produzierbar |
+| @nimishajainnutrition (EN) | 1,5 Mio. | 174× | Animierte weinende Darm-Figur + „6 ballaststoffreiche Lebensmittel, die helfen **können**" | **Charakter-Animation + „may help"-Formulierung** – passt zu unseren Sprachregeln |
+| TikTok: @paco.len.2025, @healthtoday36, @diet.xperts | 0,5–1,6 Mio. | bis 1.500× | 3D-Organfigur „isst" gesund; Infografik Lebensmittel ↔ Organe | Organ-Maskottchen; Achtung: „Food for organ"-Grafiken oft unbelegt |
+
+**Gesamtmuster international**
+1. **Darm-Modell-Demo** ist ein internationaler Trend (EN/ES/DE) → Karl übersetzt offenbar erfolgreiche Formate.
+2. **Infografiken & Animationen** erreichen Millionen mit Mini-Accounts → geringer Aufwand, kein Avatar nötig, ideal als zweite Formatlinie.
+3. **Whiteboard-/Tabellen-Erklärung** („Was dein X über Y sagt") funktioniert mit echter Expertise.
+4. **Organ-Figuren** (weinender Darm) schaffen Emotion und Kinderleichtigkeit.
+5. Viele Top-Videos verkaufen Detox/Supplements/Tests → Raum für eine **ehrliche Version**.
+6. Kiwi bei Verstopfung: Es gibt nach Kenntnisstand von Claude RCTs zu Kiwi bei Verstopfung → recherchieren, starkes ehrliches Thema.

@@ -22,5 +22,13 @@ Regel: Jede Visualisierung muss den Vorgang **vereinfachen, nicht verfälschen**
 | Curcumin-Bioverfügbarkeit | Gast an der Tür, Leber „etikettiert und schickt weg" | Türsteher | „+2000 %" nicht als Wirkung darstellen | [[LM-003_Kurkuma]] |
 | Empfehlung vs. Realität | Zwei Messbecher/Balken (30 g vs. 18 g) | – | Quelle einblenden | [[BIO-002_Darmmikrobiom_und_Ballaststoffe]] |
 
+## Formate ohne Avatar (international erfolgreich)
+| Format | Aufwand | Beispiel | Hinweis |
+|---|---|---|---|
+| Animierte Infografik, Split-Screen „gut vs. weniger gut" | < 1 Tag | @sahoom_guthealth | Jede Zuordnung braucht Akte |
+| Statische Listen-Grafik „Meiden / Bevorzugen" | < 1 Std. | @alimentanatura | Keine Verbote ohne Beleg; „Meiden" sensibel formulieren |
+| Organ-Maskottchen (2D/3D), weint/freut sich | 1 Tag–1 Woche | @nimishajainnutrition | Emotion ohne Angst; Organe nicht „vergiften" lassen |
+| Whiteboard-Tabelle, durchgehen | < 1 Std. | @albaortin_pni | Mit Avatar kombinierbar |
+
 ## Beobachtete Requisiten bei Referenzaccounts (zur Inspiration)
 Transparente Trichter-/Röhrensäulen, Anatomiemodelle, Whiteboard mit Zeigestock, Silikon-Torsos, Schleim-Imitat, Küchenprops in heller Premium-Küche. → Übernehmbar: Röhren-Modell, Anatomiemodell, Whiteboard. Nicht übernehmen: Körperteil-Dummys mit „Problemzonen", anatomisch falsche Demonstrationen (Getränke „spülen" Bronchialschleim weg).

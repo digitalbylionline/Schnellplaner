@@ -29,4 +29,12 @@ tags: [content-gehirn]
 | 14 | Honig bei Husten – was Studien sagen (inkl. Baby-Warnung) | C | – | [[Q-HON-01]] → neue Akte | 🔬 |
 | 15 | Ingwer bei Übelkeit – wo es Belege gibt und wo nicht | A | Übelkeit | [[LM-002_Ingwer]] A-ING-01/02 | 📄 |
 
+| 16 | Infografik „Was füttert dein Darmmikrobiom?" (Loop) | Grafik | Fermentation → Ballaststoffe/Polyphenole | BIO-002 + neue Quellen | 🔬 |
+| 17 | „Was deine Gase über deinen Darm sagen" (Whiteboard-Tabelle) | A | Fermentation/Gasbildung | neue Akte | 🔬 |
+| 18 | Weinende Darm-Figur: „Lebensmittel, die bei Verstopfung helfen können" (Kiwi, Flohsamen, Pflaumen …) | Animation | Verstopfung | BIO-002 A-DARM-03 + Kiwi/Pflaumen-Studien | 🔬 |
+| 19 | Freebie-Funnel „Kommentiere CHECK → kostenloser Ballaststoff-Check" | Funnel | – | BIO-002 + BLS-Daten | 🔬 |
+| 20 | Serie „30 Tage darmfreundlich" | Serie | – | mehrere Akten | 💡 |
+| 21 | „Vitamin C gegen Erkältung – was wirklich stimmt" | C | Immunsystem | neue Akte (Cochrane) | 🔬 |
+| 22 | Kurze Ein-Fakt-Rezeptclips (≤ 25 s) mit Zutaten-Steckbrief in Caption | B | je Zutat | je Akte | 💡 |
+
 **Kennzahlen nach Veröffentlichung:** Aufrufe · Speicherungen · Kommentare · Kommentarquote (Kommentare/Aufrufe) · Keyword-Kommentare · Freebie-Opt-ins.

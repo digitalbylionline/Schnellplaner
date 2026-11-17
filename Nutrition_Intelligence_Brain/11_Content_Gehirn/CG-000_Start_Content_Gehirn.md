@@ -38,6 +38,7 @@ Nach **jedem** der folgenden Ereignisse wird das Gehirn aktualisiert:
 | Fehler/Korrektur | Korrektur in Akte + Hinweis in CG-002 (neue Formulierungsregel) |
 
 ## Grenzen (gelten immer)
+- **Inspiration ja, Kopie nein:** Themen, Formate, Strukturen und Hook-Muster dürfen übernommen werden. Texte, Skripte, Grafiken, Musik und Figuren anderer Accounts werden nicht kopiert oder übersetzt übernommen (Urheberrecht). Fakten immer selbst aus Primärquellen recherchieren.
 - Nichts erfinden: keine Studien, Zahlen, Patientengeschichten, Expertenbiografien.
 - Nichts versprechen: keine Heilung, kein „wie ein Uhrwerk", kein „X kg in Y Tagen".
 - Jede Aussage im Video hat eine Aussage-ID aus einer Akte (≥ R1) – siehe [[Evidenzstufen_und_Statussystem]].

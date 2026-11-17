@@ -35,6 +35,10 @@ Priorität: **P0** blockiert Veröffentlichung · **P1** nächste Phase · **P2*
 - [ ] Asiatische Küche: fermentierte Lebensmittel (Kimchi, Miso, Natto, Tempeh), grüner Tee, Soja, Algen/Jod
 - [ ] Hausmittel: Honig bei Husten ([[Q-HON-01]]), Zwiebelsud, Ingwertee
 - [ ] Ballaststoff- und Proteingehalte typischer Lebensmittel (BLS) für Freebies
+- [ ] Kiwi und Pflaumen bei Verstopfung (RCTs, Metaanalysen)
+- [ ] Vitamin C und Erkältung (Cochrane)
+- [ ] Darmgase: normale Häufigkeit, Ursachen, Warnzeichen
+- [ ] Pfefferminzöl bei Spannungskopfschmerz (Leitlinie)
 
 ## P2 – Grundlagen & Mythen
 - Vitamin D, B12, Eisen, Jod, Zink, Folat

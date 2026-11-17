@@ -22,5 +22,12 @@ Jeder Hook = **Handlung im Bild** (0–1 s) + **Satz** (bis 3 s). Neue Muster au
 | H7 | Zahl gegen Erwartung („30 g empfohlen – die meisten essen 18") | eigene Idee | Überraschung | ✅ ([[BIO-002_Darmmikrobiom_und_Ballaststoffe]]) |
 | H8 | „Das essen deine Darmbakterien – nicht du." | eigene Idee | Perspektivwechsel | ✅ |
 
+| H9 | Infografik-Titel als Frage: „Was füttert dein Darmmikrobiom?" (Split-Screen gut/weniger gut) | @sahoom_guthealth (2,7 Mio.) | Speichern, Loop | ✅ – nur belegte Zuordnungen |
+| H10 | Whiteboard-Tabelle: „Was deine Gase über deinen Darm sagen" | @albaortin_pni (823 Tsd.) | Neugier + Scham-Humor | ✅ mit belegten Inhalten (z. B. 10–20×/Tag normal – Quelle prüfen) |
+| H11 | Weinende Organ-Figur + „6 Lebensmittel, die helfen können" | @nimishajainnutrition (1,5 Mio.) | Emotion, Kinderleichtigkeit | ✅ – passt zur „kann helfen"-Sprache |
+| H12 | „Kommentiere WAHRHEIT → kostenloser Check per DM" | @_juleklein_ (835 Kommentare) | Lead | ✅ Freebie statt Produkt |
+| H13 | Alltagstrick („So schneidest du Kürbis leichter") | @_juleklein_ (153 Tsd.) | Reichweite ohne Claim | ✅ |
+| H14 | Ein überraschender Zutaten-Fakt zum Rezept | @doc.felix (431 Tsd.) | Aha | ✅ – Fakt muss stimmen |
+
 ## Nicht verwenden
 „Sie wollen nicht, dass du das weißt", „Ich darf den Namen nicht nennen", „Dein Körper schreit nach …", Körperteile von Frauen als Problemzonen inszenieren.
