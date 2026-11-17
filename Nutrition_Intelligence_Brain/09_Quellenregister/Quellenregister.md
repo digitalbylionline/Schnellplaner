@@ -11,7 +11,7 @@ tags: [register]
 
 Eine Notiz je Quelle (Vorlage: [[Vorlage_Quelle]]). Verifikationsstufen siehe [[Evidenzstufen_und_Statussystem]].
 
-**Bestand:** 72 Quellen · V0: 0 · V1: 33 · V2: 39 · V3: 0
+**Bestand:** 76 Quellen · V0: 0 · V1: 34 · V2: 42 · V3: 0
 
 > [!warning] Keine Quelle wurde im Volltext gelesen (kein V0). Alle Zahlen vor Veröffentlichung gegen den Volltext prüfen.
 >
@@ -91,3 +91,7 @@ Eine Notiz je Quelle (Vorlage: [[Vorlage_Quelle]]). Verifikationsstufen siehe [[
 | [[Q-RECHT-15]] | BGH, Urt. v. 10.02.2011, I ZR 164/09 (Double-opt-in) | Urteil (BGH) | V2 | [[Regelwerk_Recht_DE_EU]] |
 | [[Q-RECHT-16]] | EU Register of nutrition and health claims | Offizielles Register | V2 | [[Regelwerk_Recht_DE_EU]] |
 | [[Q-RECHT-17]] | Heilmittelwerbegesetz (HWG) | Gesetz (DE) | V2 | [[Regelwerk_Recht_DE_EU]] |
+| [[Q-PROT-01]] | DGE – Referenzwert Protein | Behördliche/fachgesellschaftliche Referenzwerte | V2 | [[CG-005_Themenfelder]] |
+| [[Q-GEW-01]] | S3-Leitlinie Prävention und Therapie der Adipositas, Version 5.0 (2024) | Leitlinie (S3) | V2 | [[CG-005_Themenfelder]] |
+| [[Q-AYU-01]] | Saper et al. 2008, JAMA | Querschnittsstudie (Produktanalyse) | V2 | [[CG-005_Themenfelder]] |
+| [[Q-HON-01]] | Oduwole et al. 2018, Cochrane | Cochrane Review | V1 | [[CG-005_Themenfelder]] |

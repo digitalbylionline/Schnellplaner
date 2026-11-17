@@ -41,6 +41,7 @@ Quelle (09) ──► Forschungsakte (01–04) ──► Qualitätskontrolle (00
 | `08_Monetarisierung/` | Leitplanken für Freebies, E-Mail, Affiliate, Produkte | [[Monetarisierung_Leitplanken]] |
 | `09_Quellenregister/` | Eine Notiz je Quelle + Gesamtregister | [[Quellenregister]] |
 | `10_Recherche_Backlog/` | Offene Themen, Priorisierung | [[Recherche_Backlog]] |
+| `11_Content_Gehirn/` | Wie aus Wissen Videos werden: Kernformat „Körper trifft Ernährung", Sprachregeln, Hooks, Visualisierungen, Themenfelder, Analyse-Log, Ideen-Pipeline – wird laufend erweitert | [[CG-000_Start_Content_Gehirn]] |
 
 ## Aktueller Stand (16.11.2026)
 

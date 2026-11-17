@@ -28,6 +28,14 @@ Priorität: **P0** blockiert Veröffentlichung · **P1** nächste Phase · **P2*
 - [ ] [[NS-002_Magnesium]] (rechtlich besonders relevant: Nährstoff-Claims, Affiliate-Markt)
 - [ ] Zugelassene Nährstoff-Claims (Vitamin C, Magnesium, EPA/DHA, ALA, Ballaststoffe) mit exaktem Wortlaut und Bedingungen aus dem EU-Register
 
+## P1b – Neue Themenfelder (Wunsch 17.11.2026, siehe [[CG-005_Themenfelder]])
+- [ ] Natürliche Proteinaufnahme (DGE-Werte [[Q-PROT-01]] im Original, Proteingehalte BLS, Protein im Alter)
+- [ ] Gesund abnehmen (S3-Leitlinie Adipositas 2024 [[Q-GEW-01]] im Original; Sättigung durch Ballaststoffe/Protein; Mythen)
+- [ ] Ayurveda: systematische Reviews auswerten, Schwermetall-Problematik ([[Q-AYU-01]]), Dosha-Konzept einordnen
+- [ ] Asiatische Küche: fermentierte Lebensmittel (Kimchi, Miso, Natto, Tempeh), grüner Tee, Soja, Algen/Jod
+- [ ] Hausmittel: Honig bei Husten ([[Q-HON-01]]), Zwiebelsud, Ingwertee
+- [ ] Ballaststoff- und Proteingehalte typischer Lebensmittel (BLS) für Freebies
+
 ## P2 – Grundlagen & Mythen
 - Vitamin D, B12, Eisen, Jod, Zink, Folat
 - Blutzucker und Insulin (Glukosespitzen-Hype, CGM bei Gesunden)
