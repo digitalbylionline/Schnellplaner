@@ -35,6 +35,7 @@ Priorität: **P0** blockiert Veröffentlichung · **P1** nächste Phase · **P2*
 - Ultraverarbeitete Lebensmittel, Emulgatoren, Süßstoffe
 - Probiotika (Cochrane je Indikation), fermentierte Lebensmittel
 - „Leaky Gut", Mikrobiom-Selbsttests
+- Mythos „verkrustete Darmablagerungen" / Darmreinigung
 - Detox, Basenfasten, Apfelessig, Kollagen, „Superfoods"
 - Kaffee, grüner Tee, Kakao/Polyphenole, Olivenöl, Hülsenfrüchte, Vollkorn, Beeren, Nüsse
 - Mediterrane Ernährung (EM-001), Intermittierendes Fasten

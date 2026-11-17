@@ -72,3 +72,60 @@ tags: [analyse, content]
 - [ ] 2–3 weitere Karl-Reels mit mittlerer Performance prüfen, um Unterschiede zu Hits zu verstehen (vidIQ-Guthaben: 85 von 150 Credits übrig, ein Video kostet 10).
 - [ ] Prüfen, ob Karl-Inhalte übersetzte Kopien eines englischsprachigen Originalaccounts sind (Hinweis der Analyse, unbestätigt).
 - [ ] Eigenes Format als Pilot-Briefing aus einer Akte mit Status R1 ableiten ([[Vorlage_Video]]).
+
+---
+
+## Nachtrag 17.11.2026: Die Mechanik – wie aus Zuschauern E-Mail-Kontakte werden
+
+Zusätzlich analysiert: Reel `DfzqsqPiFcg` (81 s, 27,7 Tsd. Aufrufe, **494 Kommentare** = 1,8 % Kommentarquote) sowie die Kommentare unter dem 1,3-Mio.-Rezeptvideo und dem „Mineral“-Video.
+
+### Der Trichter
+```
+1. REICHWEITE      Rezeptvideo („Mach das")            → viele neue Zuschauer + Follower
+                   CTA: „Schreib ‚Ja', wenn du mehr willst"  (Kommentare = Algorithmus-Signal)
+2. VERTRAUEN       Figur „erfahrener Mann", täglich präsent, „ich teile, was dir keiner sagt"
+3. LEAD            Erklärvideo zu einem Leidensthema („Problem → Mechanismus → geheime Lösung")
+                   Lösung wird NICHT genannt → „Schreib ‚Mineral'"
+4. AUTOMATION      Jeder Kommentar erhält genau 1 automatische Antwort (Muster in den Kommentaren
+                   sichtbar) + automatische DM mit Link (vermutlich ManyChat o. Ä.)
+5. E-MAIL / KAUF   DM → Landingpage/Opt-in bzw. Amazon-Affiliate-Link (Magnesium)
+```
+
+### Was die Leute kommentieren
+- **Rezeptvideo:** fast nur „Ja", Herzen, „Danke, probiere ich" – plus vereinzelt „KI… 😂" (26 Likes: Ein Teil des Publikums erkennt die KI, stört sich aber offenbar kaum).
+- **Mineral-Video:** fast ausschließlich das Keyword „Mineral" + „Danke"/🙏 → reine Lead-Kommentare, keine Diskussion.
+- → Kommentare sind kein Zeichen echter Diskussion, sondern **ausgelöste Handlungen**. Je einfacher das Keyword und je größer die Neugier-Lücke, desto mehr Kommentare.
+
+### Bauplan der Erklärvideos (Lead-Typ)
+1. **Ekel-/Schock-Hook mit Requisite** (transparenter „Darm"-Trichter, Silikon-Bauch) + direkte Ansprache eines Schamthemas (Verstopfung, Bauch, Cellulite).
+2. **Bekannte Lösungen entwerten:** „Chiasamen, Apfelessig, Pflaumensaft – nichts davon hilft."
+3. **Scheinbarer Mechanismus** mit Whiteboard/Anatomiemodell: Blockade → Blähbauch → Müdigkeit → Gewicht.
+4. **Social Proof ohne Beleg:** „Frauen in den 40ern, 50ern, die ich begleitet habe, berichten …"
+5. **Open Loop + Keyword-CTA:** „Dieses eine Mineral … schreib ‚Mineral'" + „folge mir vorher, sonst kann ich dir nicht schreiben" (Follower-Hebel; dass Folgen technisch nötig ist, ist vermutlich ein Vorwand – bei Instagram-Automationen prüfen).
+
+**Zielgruppe:** erkennbar Frauen 40+ mit Alltagsbeschwerden (Verdauung, Gewicht, Haut, Müdigkeit, Schlaf).
+
+### Bewertung der Erklär-Inhalte (fachlich)
+- „Seit Jahren festsitzende Ablagerungen im Darm" ist ein bekannter Mythos (Evidenz D – Quelle für Akte ergänzen).
+- Chiasamen/Ballaststoffe als nutzlos darzustellen widerspricht der Studienlage zu Verstopfung ([[BIO-002_Darmmikrobiom_und_Ballaststoffe]], A-DARM-03).
+- Magnesium kann abführend wirken – das ist der wahre Kern, wird aber als Wundermittel für Energie, Haut und Gewicht verkauft ([[NS-002_Magnesium]], noch zu recherchieren).
+
+## Übertragung auf unseren Account: gleiche Mechanik, ehrlicher Inhalt
+
+| Baustein | Karl | Unsere Version |
+|---|---|---|
+| Reichweiten-Video | Rezept + „Schreib Ja" | Rezept + echter Fakt („1 Portion = x g Ballaststoffe", belegt) + „Speichern"/„Schreib Ja für Teil 2" |
+| Hook | Ekel/Schock mit Requisite | Requisite ja (Darm-Modell, Zuckerwürfel, Messbecher), aber zeigt etwas **Wahres** |
+| Erklärung | Scheinmechanismus | Echter Körpervorgang aus der Akte, einfach visualisiert |
+| Open Loop | „Dieses eine Mineral" | „Die 3 Lebensmittel mit den meisten Ballaststoffen pro Euro – Liste per DM" (Wissen wird im Video teils verraten, der Rest steckt im Freebie) |
+| Keyword | „Mineral" | z. B. „LISTE", „PLAN", „QUELLE" |
+| DM | Produktlink | Link zum **Freebie** (Wochenplan, Einkaufsliste, Mythen-Check-PDF) |
+| E-Mail | Ziel: Supplement-Verkauf | Opt-in mit **Double-Opt-in**, Newsletter-Einwilligung **getrennt** vom Freebie ([[Regelwerk_Recht_DE_EU]] Abschnitt 7) |
+| Social Proof | erfundene Kundinnen | echte Kommentare/Umfragen der Community, Studienzahlen |
+| Monetarisierung | Magnesium-Affiliate | offen: digitale Produkte, ggf. später geprüfte Produkte (W2-Claims, gekennzeichnet) |
+
+### To-dos für den Funnel
+- [ ] DM-Automation auswählen (z. B. ManyChat) – Datenschutz: AV-Vertrag, Datenübermittlung in Drittländer prüfen.
+- [ ] Erstes Freebie aus [[BIO-002_Darmmikrobiom_und_Ballaststoffe]] ableiten (nach R1).
+- [ ] Prüfen, ob Instagram-Automationen ein Folgen wirklich voraussetzen.
+- [ ] Mythos „Darmablagerungen" in eine Akte aufnehmen (starkes „Stimmt das?"-Thema).
