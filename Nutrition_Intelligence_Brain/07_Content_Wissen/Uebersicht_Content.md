@@ -11,6 +11,7 @@ tags: [uebersicht]
 > [!important] In Phase 1 werden **keine** Videos produziert und **kein** Avatar entwickelt.
 
 - Vorlage: [[Vorlage_Video]]
+- Formatanalyse Referenzaccounts: [[Formatanalyse_Referenzaccounts]]
 - Voraussetzung je Video: Quell-Akte mindestens **R1**, alle verwendeten Aussagen mit ID, Rechtscheck nach [[Regelwerk_Recht_DE_EU]] Abschnitt 10.
 - Regeln: [[Redaktionelle_Regeln_und_Sicherheit]]
 

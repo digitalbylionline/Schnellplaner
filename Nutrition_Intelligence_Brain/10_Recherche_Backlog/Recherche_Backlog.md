@@ -60,4 +60,5 @@ Beobachtungen aus dem Screenshot (nur der Screenshot, keine Inhalte der Videos):
 **Nächste Schritte Formatanalyse:**
 - [ ] Videos sichten (Upload durch Auftraggeberin geplant, Scraping bisher nicht erfolgt: Apify-Verbindung in dieser Sitzung fehlgeschlagen, direkter Seitenabruf netzwerkseitig blockiert): Länge, Hook-Typen, Schnittfrequenz, Untertitelstil, Sprechtempo, Erklärstruktur, CTA, Kommentar-Themen
 - [ ] Zweiten Referenzaccount ergänzen (Name folgt)
-- [ ] Ergebnis als `07_Content_Wissen/Formatanalyse_Referenzaccounts.md` – Ziel: eigenes, unterscheidbares Format (keine Kopie von Figur, Look oder Texten)
+- [x] Erste Analyse (3 Reels) erstellt: [[Formatanalyse_Referenzaccounts]] (17.11.2026)
+- [ ] Ausbau der Analyse – Ziel: eigenes, unterscheidbares Format (keine Kopie von Figur, Look oder Texten)
