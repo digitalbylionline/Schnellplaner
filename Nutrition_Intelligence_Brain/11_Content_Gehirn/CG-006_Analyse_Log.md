@@ -20,7 +20,6 @@ Jedes analysierte Video bekommt eine Zeile. Details zu Account 1: [[Formatanalys
 | 2026-11-17 | karl.wohlbefinden | DfzqsqPiFcg | 27,7 Tsd. | 494 | Lead (Darm) | Darm-Röhre als Requisit, Schamthema, Whiteboard | „Ablagerungen seit Jahren", Ballaststoffe als nutzlos dargestellt |
 | 2026-11-17 | karl.wohlbefinden | DfRJlCZR5NF | – | – | Rezept | Hook H1, „ohne Mehl" als USP, sehr schneller Schnitt | Endprodukt laut Analyse physikalisch unwahrscheinlich ohne Bindemittel |
 | 2026-11-17 | karl.wohlbefinden | DfbhxVhxnAU | – | – | Hausmittel + Lead | Schleim-Trichter, Kontra-These, Rezept, „Ja"-Keyword für DM | Anatomie falsch (Getränke fließen nicht durch Atemwege); „Entgiftung", „befreit die Lunge"; Honig-Kern plausibel ([[Q-HON-01]]) |
-
 | 2026-11-17 | doc.felix | 12 Reels (Liste) | bis 431 Tsd. | niedrig | Talking Head + Rezept | Zutaten-Steckbrief in Caption; kurze Ein-Fakt-Videos gewinnen; saubere „Anzeige"-Kennzeichnung | Vitamin-C-Erkältungsfakt vermutlich überverallgemeinert |
 | 2026-11-17 | _juleklein_ | 12 Reels (Liste) | bis 410 Tsd. | 835 bei Keyword-Reel | Rezept + Freebie-Funnel | „WAHRHEIT" → kostenloser Zucker-Check per DM; Serie „Tag X von 30"; 13–29-s-Clips | „antientzündlich" für Einzelrezepte nicht belegt |
 | 2026-11-17 | international (EN/ES, 16 Outlier) | Outlier-Suche | 0,5–4,3 Mio. | – | Infografik, Darm-Modell, Whiteboard-Tabelle, Organ-Figur | Infografiken/Animationen erreichen Millionen mit Mini-Accounts; Darm-Modell-Trend wandert zwischen Sprachen | viele Detox-/Supplement-Versprechen |
